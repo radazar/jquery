@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cards y table jquery</title>
+    <meta charset="UTF-8">
+    <meta autor="Andrei" description="Pagina js, html y css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+    <script>
+        $(document).ready(function () {
+        $('#example').DataTable();
+    });
+    </script>
+</head>
+<body>
+ <div class="d-flex row justify-content-center">
+  <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid" style="width: 85%;">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="https://acortar.link/shE4JE"
+            class="me-2"
+            height="40"
+            alt="Logo"
+            loading="lazy"
+          />
+          <small>Inicio</small>
+        </a>
+      </div>
+    </nav>
+   
+   <h1 class="text-center">DJ muisca Electronica</h1><br>
+    <div class="card mt-4 mx-2" style="width: 18rem;">
+      <img src="https://acortar.link/5VfY14" class="card-img-top mx-auto mt-4" style="height: 10rem; width: 10rem">
+      <div class="card-body">
+        <h5 class="card-title text-center">Alan Walker</h5>
+        <p class="card-text">Alan Olav Walker (24 de agosto de 1997) es un conocido DJ, compositor y productor musical discográfico  de electronica noruego-británico</p>
+         <ul class="list-group list-group-flush">
+            <li class="list-group-item">Darkside</li>
+            <li class="list-group-item">Alone</li>
+            <li class="list-group-item">Faded</li>
+          </ul><br>
+        <a href="https://es.wikipedia.org/wiki/Alan_Walker" class="btn btn-primary">Biografia</a>
+      </div>
+    </div>
+    
+    <div class="card mt-4 mx-2" style="width: 18rem;">
+      <img src="https://acortar.link/I5O8H9" class="card-img-top mx-auto mt-4" style="height: 10rem; width: 10rem">
+      <div class="card-body">
+        <h5 class="card-title text-center">Avicci</h5>
+        <p class="card-text">Tim Bergling (Estocolmo, 8/09/1989-Mascate, 20/05/2018), conocido como Avicii, fue un DJ, remezclador y productor musical sueco</p>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Levels</li>
+            <li class="list-group-item">Wake me up</li>
+            <li class="list-group-item">The nights</li>
+          </ul><br>
+        <a href="https://es.wikipedia.org/wiki/Avicii" class="btn btn-primary">Biografia</a>
+      </div>
+    </div>
+    
+    <div class="card mt-4 mx-2" style="width: 18rem;">
+      <img src="https://acortar.link/5YMrUh" class="card-img-top mx-auto mt-4" style="height: 10rem; width: 10rem">
+      <div class="card-body">
+        <h5 class="card-title text-center">Marshmello</h5>
+        <p class="card-text">Christopher Comstock (Filadelfia, Pensilvania; 19/05/1992), conocido como Marshmello, es un productor DJ estadounidense.</p>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Alone</li>
+            <li class="list-group-item">Happier</li>
+            <li class="list-group-item">Friends</li>
+          </ul><br>
+        <a href="https://es.wikipedia.org/wiki/Marshmello" class="btn btn-primary">Biografia</a>
+      </div>
+    </div>
+    
+    <div class="card mt-4 mx-2" style="width: 18rem;">
+      <img src="https://acortar.link/kmGxcZ" class="card-img-top mx-auto mt-4" style="height: 10rem; width: 10rem">
+      <div class="card-body">
+        <h5 class="card-title text-center">steve aoki</h5>
+        <p class="card-text">Steve Aoki (Miami, 30/11/1977), es un DJ productor estadounidense de origen japonés, fundador del sello discográfico Dim Mak Records.</p>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Boneless</li>
+            <li class="list-group-item">Pursuit Of Happiness</li>
+            <li class="list-group-item">Cudi The Kid</li>
+          </ul><br>
+        <a href="https://es.wikipedia.org/wiki/Steve_Aoki" class="btn btn-primary">Biografia</a>
+      </div>
+    </div>
+    </div>
+    <br>
+    <div class="container">
+    <h1>Canciones de los DJ </h1>
+    <div>
+        <table id="example" class="table">
+          <thead>
+            <tr>
+              <th scope="col">N</th>
+              <th scope="col">DJ</th>
+              <th scope="col">Cancion</th>
+              <th scope="col">Año</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Alan Walker</td>
+              <td>Faded</td>
+              <td>2015</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Alan Walker</td>
+              <td>Spectre</td>
+              <td>2017</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Alan Walker</td>
+              <td>Darkside</td>
+              <td>2018</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Alan Walker</td>
+              <td>Alone</td>
+              <td>2016</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>Alan Walker</td>
+              <td>On my way</td>
+              <td>2019</td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td>Alan Walker</td>
+              <td>Diamont herad</td>
+              <td>2018</td>
+            </tr>
+            <tr>
+              <th scope="row">7</th>
+              <td>Alan Walker</td>
+              <td>Are you lonely</td>
+              <td>2020</td>
+            </tr>
+            <tr>
+              <th scope="row">8</th>
+              <td>Avicci</td>
+              <td>Levels</td>
+              <td>2011</td>
+            </tr>
+            <tr>
+              <th scope="row">9</th>
+              <td>Avicci</td>
+              <td>The nights</td>
+              <td>2014</td>
+            </tr>
+            <tr>
+              <th scope="row">10</th>
+              <td>Avicci</td>
+              <td>Hey brother</td>
+              <td>2013</td>
+            </tr>
+            <tr>
+              <th scope="row">11</th>
+              <td>Avicci</td>
+              <td>Wake me up</td>
+              <td>2013</td>
+            </tr>
+            <tr>
+              <th scope="row">12</th>
+              <td>Avicci</td>
+              <td>I could be the one</td>
+              <td>2013</td>
+            </tr>
+            <tr>
+              <th scope="row">13</th>
+              <td>Avicci</td>
+              <td>Taste the feeling</td>
+              <td>2016</td>
+            </tr>
+            <tr>
+              <th scope="row">14</th>
+              <td>Avicci</td>
+              <td>Dear boy</td>
+              <td>2013</td>
+            </tr>
+            <tr>
+              <th scope="row">15</th>
+              <td>Marshmello</td>
+              <td>Alone</td>
+              <td>2016</td>
+            </tr>
+            <tr>
+              <th scope="row">16</th>
+              <td>Marshmello</td>
+              <td>Wolves</td>
+              <td>2017</td>
+            </tr>
+            <tr>
+              <th scope="row">17</th>
+              <td>Marshmello</td>
+              <td>Fly</td>
+              <td>2018</td>
+            </tr>
+            <tr>
+              <th scope="row">18</th>
+              <td>Marshmello</td>
+              <td>Silence</td>
+              <td>2017</td>
+            </tr>
+            <tr>
+              <th scope="row">19</th>
+              <td>Marshmello</td>
+              <td>Danger</td>
+              <td>2017</td>
+            </tr>
+            <tr>
+              <th scope="row">20</th>
+              <td>Marshmello</td>
+              <td>Sha sha</td>
+              <td>2022</td>
+            </tr>
+            <tr>
+              <th scope="row">21</th>
+              <td>Marshmello</td>
+              <td>Vibr8</td>
+              <td>2021</td>
+            </tr>
+            <tr>
+              <th scope="row">22</th>
+              <td>Steve Aoki</td>
+              <td>Boneless</td>
+              <td>2013</td>
+            </tr>
+            <tr>
+              <th scope="row">23</th>
+              <td>Steve Aoki</td>
+              <td>Pursuit of happiness</td>
+              <td>2009</td>
+            </tr>
+            <tr>
+              <th scope="row">24</th>
+              <td>Steve Aoki</td>
+              <td>Ultimate</td>
+              <td>2012</td>
+            </tr>
+            <tr>
+              <th scope="row">24</th>
+              <td>Steve Aoki</td>
+              <td>Kong 2</td>
+              <td>2022</td>
+            </tr>
+            <tr>
+              <th scope="row">25</th>
+              <td>Steve Aoki</td>
+              <td>Send it</td>
+              <td>2019</td>
+            </tr>
+            <tr>
+              <th scope="row">26</th>
+              <td>Steve Aoki</td>
+              <td>Are you lonely</td>
+              <td>2020</td>
+            </tr>
+            <tr>
+              <th scope="row">27</th>
+              <td>Steve Aoki</td>
+              <td>Melody</td>
+              <td>2016</td>
+            </tr>
+            <tr>
+              <th scope="row">28</th>
+              <td>Steve Aoki</td>
+              <td>Mambo</td>
+              <td>2021</td>
+            </tr>
+            
+          </tbody>
+        </table>
+    </div>
+    </div><br>
+    <footer class="bg-light text-center text-lg-start">
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        ©  Copyright:
+        <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+</body>
+</html>
